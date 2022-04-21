@@ -236,7 +236,7 @@ export default {
             axios.get("/logout");
             window.location.reload();
             this.$toaster.success("Đăng xuất thành công !", 7000);
-            window.location.href = "http://mobilehoangdung.store";
+            window.location.href = "http://mobilehoangdung.tk";
             return (this.onShow = false);
         },
         async getCartItem() {
