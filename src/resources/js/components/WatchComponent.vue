@@ -106,15 +106,15 @@
                           }}
                         </p>
                         <p class="mt-[5px]">
-                          Quà: <span>{{ format(2000000) }}</span>
+                          Quà: <span>{{ format(200000) }}</span>
                         </p>
                         <div class="mt-[5px]">
-                          <i class="far fa-star"></i>
-                          <i class="far fa-star"></i>
-                          <i class="far fa-star"></i>
-                          <i class="far fa-star"></i>
-                          <i class="far fa-star"></i>
-                          <span>11</span>
+                          <i class="far fa-star text-yellow-400"></i>
+                          <i class="far fa-star text-yellow-400"></i>
+                          <i class="far fa-star text-yellow-400"></i>
+                          <i class="far fa-star text-yellow-400"></i>
+                          <i class="far fa-star text-yellow-400"></i>
+                          <span>5</span>
                         </div>
                       </router-link>
                     </div>

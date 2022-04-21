@@ -73,7 +73,7 @@
                         />
                         <span
                           class="uppercase text-white inline-block mx-[10px] text-[10px]"
-                          >Ưu đãi đến 4 triệu</span
+                          >Ưu đãi đến 3 triệu</span
                         >
                       </div>
                     </div>
@@ -110,12 +110,12 @@
                       Quà: <span>{{ format(2000000) }}</span>
                     </p>
                     <div class="mt-[5px]">
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <span>11</span>
+                      <i class="far fa-star text-yellow-400"></i>
+                      <i class="far fa-star text-yellow-400"></i>
+                      <i class="far fa-star text-yellow-400"></i>
+                      <i class="far fa-star text-yellow-400"></i>
+                      <i class="far fa-star text-yellow-400"></i>
+                      <span>5</span>
                     </div>
                   </router-link>
                 </div>

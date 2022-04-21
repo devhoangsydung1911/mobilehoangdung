@@ -2859,6 +2859,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "HeadphoneComponent",
   data: function data() {
@@ -7901,7 +7909,7 @@ var render = function () {
                                         staticClass:
                                           "uppercase text-white inline-block mx-[10px] text-[10px]",
                                       },
-                                      [_vm._v("Ưu đãi đến 4 triệu")]
+                                      [_vm._v("Ưu đãi đặc biệt")]
                                     ),
                                   ]
                                 ),
@@ -7960,6 +7968,30 @@ var render = function () {
                                 "\n                    Quà:\n                    "
                               ),
                               _c("span", [_vm._v(_vm._s(_vm.format(100000)))]),
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "mt-[5px]" }, [
+                              _c("i", {
+                                staticClass: "far fa-star text-yellow-400",
+                              }),
+                              _vm._v(" "),
+                              _c("i", {
+                                staticClass: "far fa-star text-yellow-400",
+                              }),
+                              _vm._v(" "),
+                              _c("i", {
+                                staticClass: "far fa-star text-yellow-400",
+                              }),
+                              _vm._v(" "),
+                              _c("i", {
+                                staticClass: "far fa-star text-yellow-400",
+                              }),
+                              _vm._v(" "),
+                              _c("i", {
+                                staticClass: "far fa-star text-yellow-400",
+                              }),
+                              _vm._v(" "),
+                              _c("span", [_vm._v("5")]),
                             ]),
                           ]
                         ),
@@ -8169,7 +8201,7 @@ var render = function () {
                                         staticClass:
                                           "uppercase text-white inline-block mx-[10px] text-[10px]",
                                       },
-                                      [_vm._v("Ưu đãi đến 4 triệu")]
+                                      [_vm._v("Ưu đãi đến 3 triệu")]
                                     ),
                                   ]
                                 ),
@@ -8264,17 +8296,27 @@ var render = function () {
                             ]),
                             _vm._v(" "),
                             _c("div", { staticClass: "mt-[5px]" }, [
-                              _c("i", { staticClass: "far fa-star" }),
+                              _c("i", {
+                                staticClass: "far fa-star text-yellow-400",
+                              }),
                               _vm._v(" "),
-                              _c("i", { staticClass: "far fa-star" }),
+                              _c("i", {
+                                staticClass: "far fa-star text-yellow-400",
+                              }),
                               _vm._v(" "),
-                              _c("i", { staticClass: "far fa-star" }),
+                              _c("i", {
+                                staticClass: "far fa-star text-yellow-400",
+                              }),
                               _vm._v(" "),
-                              _c("i", { staticClass: "far fa-star" }),
+                              _c("i", {
+                                staticClass: "far fa-star text-yellow-400",
+                              }),
                               _vm._v(" "),
-                              _c("i", { staticClass: "far fa-star" }),
+                              _c("i", {
+                                staticClass: "far fa-star text-yellow-400",
+                              }),
                               _vm._v(" "),
-                              _c("span", [_vm._v("11")]),
+                              _c("span", [_vm._v("5")]),
                             ]),
                           ]
                         ),
@@ -8470,7 +8512,7 @@ var render = function () {
                                         staticClass:
                                           "uppercase text-white inline-block mx-[10px] text-[10px]",
                                       },
-                                      [_vm._v("Ưu đãi đến 4 triệu")]
+                                      [_vm._v("Ưu đãi đến 1 triệu")]
                                     ),
                                   ]
                                 ),
@@ -8526,21 +8568,31 @@ var render = function () {
                             _vm._v(" "),
                             _c("p", { staticClass: "mt-[5px]" }, [
                               _vm._v("\n                    Quà: "),
-                              _c("span", [_vm._v(_vm._s(_vm.format(2000000)))]),
+                              _c("span", [_vm._v(_vm._s(_vm.format(1000000)))]),
                             ]),
                             _vm._v(" "),
                             _c("div", { staticClass: "mt-[5px]" }, [
-                              _c("i", { staticClass: "far fa-star" }),
+                              _c("i", {
+                                staticClass: "far fa-star text-yellow-400",
+                              }),
                               _vm._v(" "),
-                              _c("i", { staticClass: "far fa-star" }),
+                              _c("i", {
+                                staticClass: "far fa-star text-yellow-400",
+                              }),
                               _vm._v(" "),
-                              _c("i", { staticClass: "far fa-star" }),
+                              _c("i", {
+                                staticClass: "far fa-star text-yellow-400",
+                              }),
                               _vm._v(" "),
-                              _c("i", { staticClass: "far fa-star" }),
+                              _c("i", {
+                                staticClass: "far fa-star text-yellow-400",
+                              }),
                               _vm._v(" "),
-                              _c("i", { staticClass: "far fa-star" }),
+                              _c("i", {
+                                staticClass: "far fa-star text-yellow-400",
+                              }),
                               _vm._v(" "),
-                              _c("span", [_vm._v("11")]),
+                              _c("span", [_vm._v("5")]),
                             ]),
                           ]
                         ),
@@ -9739,22 +9791,32 @@ var render = function () {
                                 _c("p", { staticClass: "mt-[5px]" }, [
                                   _vm._v("\n                        Quà: "),
                                   _c("span", [
-                                    _vm._v(_vm._s(_vm.format(2000000))),
+                                    _vm._v(_vm._s(_vm.format(200000))),
                                   ]),
                                 ]),
                                 _vm._v(" "),
                                 _c("div", { staticClass: "mt-[5px]" }, [
-                                  _c("i", { staticClass: "far fa-star" }),
+                                  _c("i", {
+                                    staticClass: "far fa-star text-yellow-400",
+                                  }),
                                   _vm._v(" "),
-                                  _c("i", { staticClass: "far fa-star" }),
+                                  _c("i", {
+                                    staticClass: "far fa-star text-yellow-400",
+                                  }),
                                   _vm._v(" "),
-                                  _c("i", { staticClass: "far fa-star" }),
+                                  _c("i", {
+                                    staticClass: "far fa-star text-yellow-400",
+                                  }),
                                   _vm._v(" "),
-                                  _c("i", { staticClass: "far fa-star" }),
+                                  _c("i", {
+                                    staticClass: "far fa-star text-yellow-400",
+                                  }),
                                   _vm._v(" "),
-                                  _c("i", { staticClass: "far fa-star" }),
+                                  _c("i", {
+                                    staticClass: "far fa-star text-yellow-400",
+                                  }),
                                   _vm._v(" "),
-                                  _c("span", [_vm._v("11")]),
+                                  _c("span", [_vm._v("5")]),
                                 ]),
                               ]
                             ),

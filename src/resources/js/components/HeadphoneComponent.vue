@@ -81,7 +81,7 @@
                         />
                         <span
                           class="uppercase text-white inline-block mx-[10px] text-[10px]"
-                          >Ưu đãi đến 4 triệu</span
+                          >Ưu đãi đặc biệt</span
                         >
                       </div>
                     </div>
@@ -106,6 +106,14 @@
                       Quà:
                       <span>{{ format(100000) }}</span>
                     </p>
+                    <div class="mt-[5px]">
+                      <i class="far fa-star text-yellow-400"></i>
+                      <i class="far fa-star text-yellow-400"></i>
+                      <i class="far fa-star text-yellow-400"></i>
+                      <i class="far fa-star text-yellow-400"></i>
+                      <i class="far fa-star text-yellow-400"></i>
+                      <span>5</span>
+                    </div>
                   </router-link>
                 </div>
               </div>
