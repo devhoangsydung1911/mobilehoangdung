@@ -59,7 +59,10 @@
                     >
                   </div>
                   <router-link
-                    :to="{ name: 'detail', params: { id: product.id } }"
+                    :to="{
+                      name: 'detail',
+                      params: { id: product.id },
+                    }"
                     class="link-product"
                   >
                     <div class="mt-[30px] mb-[20px]">
@@ -100,16 +103,9 @@
                       }}
                     </p>
                     <p class="mt-[5px]">
-                      Quà: <span>{{ format(2000000) }}</span>
+                      Quà:
+                      <span>{{ format(100000) }}</span>
                     </p>
-                    <div class="mt-[5px]">
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <span>11</span>
-                    </div>
                   </router-link>
                 </div>
               </div>
