@@ -329,7 +329,7 @@ export default {
             total_money: this.getAllMoney(),
           });
           this.$toaster.success("Đã tạo đơn hàng thành công !", 7000);
-          window.location.href = "http://localhost:8080/order";
+          window.location.href = "https://mobilehoangdung.tk/order";
         }
       }
     },

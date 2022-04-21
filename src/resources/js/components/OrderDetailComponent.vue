@@ -173,7 +173,7 @@ export default {
     },
     async exportPDF() {
       let response = await axios.get("/pdf");
-      window.location.href = "http://localhost:8080/pdf";
+      window.location.href = "https://mobilehoangdung.tk/pdf";
     },
   },
 };

@@ -224,7 +224,7 @@ export default {
       window.location.reload();
       this.$toaster.success("Đăng xuất thành công !", 7000);
       // window.location.reload();
-      // window.location.href = "https://mobilehoangdung.tk";
+      window.location.href = "https://mobilehoangdung.tk";
       return (this.onShow = false);
     },
     async getCartItem() {

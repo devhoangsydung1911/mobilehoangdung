@@ -2859,10 +2859,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "HeadphoneComponent",
   data: function data() {
@@ -3589,7 +3585,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
               case 2:
                 response = _context3.sent;
-                window.location.href = "http://localhost:8080/pdf";
+                window.location.href = "https://mobilehoangdung.tk/pdf";
 
               case 4:
               case "end":
@@ -4028,7 +4024,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
                 _this6.$toaster.success("Đã tạo đơn hàng thành công !", 7000);
 
-                window.location.href = "http://localhost:8080/order";
+                window.location.href = "https://mobilehoangdung.tk/order";
 
               case 16:
               case "end":
@@ -4660,8 +4656,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     logout: function logout() {
       axios.get("/logout");
       window.location.reload();
-      this.$toaster.success("Đăng xuất thành công !", 7000);
-      window.location.href = "http://localhost:8080";
+      this.$toaster.success("Đăng xuất thành công !", 7000); // window.location.reload();
+
+      window.location.href = "https://mobilehoangdung.tk";
       return this.onShow = false;
     },
     getCartItem: function getCartItem() {
@@ -7959,22 +7956,10 @@ var render = function () {
                             ),
                             _vm._v(" "),
                             _c("p", { staticClass: "mt-[5px]" }, [
-                              _vm._v("\n                    Quà: "),
-                              _c("span", [_vm._v(_vm._s(_vm.format(2000000)))]),
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "mt-[5px]" }, [
-                              _c("i", { staticClass: "far fa-star" }),
-                              _vm._v(" "),
-                              _c("i", { staticClass: "far fa-star" }),
-                              _vm._v(" "),
-                              _c("i", { staticClass: "far fa-star" }),
-                              _vm._v(" "),
-                              _c("i", { staticClass: "far fa-star" }),
-                              _vm._v(" "),
-                              _c("i", { staticClass: "far fa-star" }),
-                              _vm._v(" "),
-                              _c("span", [_vm._v("11")]),
+                              _vm._v(
+                                "\n                    Quà:\n                    "
+                              ),
+                              _c("span", [_vm._v(_vm._s(_vm.format(100000)))]),
                             ]),
                           ]
                         ),
