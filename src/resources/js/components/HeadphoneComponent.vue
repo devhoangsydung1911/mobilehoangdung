@@ -88,13 +88,19 @@
                     <h3 class="mt-[5px] text-base font-semibold">
                       {{ product.title }}
                     </h3>
-                    <p class="mt-[5px] line-through">
-                      {{ product.price | formatTienVN }}
-                      -
-                      {{
-                        parseInt(`${(product.discount / product.price) * 100}`)
-                      }}%
-                    </p>
+                    <div>
+                      <p class="mt-[5px] line-through inline-block">
+                        {{ product.price | formatTienVN }}
+                      </p>
+                      <span>
+                        -
+                        {{
+                          parseInt(
+                            `${100 - (product.discount / product.price) * 100}`
+                          )
+                        }}%
+                      </span>
+                    </div>
                     <p class="font-bold text-[17px] mt-[5px]">
                       {{
                         product.discount > 0
@@ -141,7 +147,7 @@ export default {
   },
   methods: {
     format(num) {
-      return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " VNĐ";
+      return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " VND";
     },
     price(discount, price) {
       if (discount > 0) {

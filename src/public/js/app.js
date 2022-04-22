@@ -2621,6 +2621,12 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -2673,7 +2679,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       }))();
     },
     format: function format(num) {
-      return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " VNĐ";
+      return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " VND";
     },
     price: function price(discount, _price) {
       if (discount > 0) {
@@ -2867,6 +2873,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "HeadphoneComponent",
   data: function data() {
@@ -2883,7 +2895,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     format: function format(num) {
-      return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " VNĐ";
+      return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " VND";
     },
     price: function price(discount, _price) {
       if (discount > 0) {
@@ -3039,6 +3051,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "LaptopComponent",
   data: function data() {
@@ -3055,7 +3073,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     format: function format(num) {
-      return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " VNĐ";
+      return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " VND";
     },
     price: function price(discount, _price) {
       if (discount > 0) {
@@ -3194,6 +3212,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "MobileComponent",
   data: function data() {
@@ -3210,7 +3234,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     format: function format(num) {
-      return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " VNĐ";
+      return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " VND";
     },
     price: function price(discount, _price) {
       if (discount > 0) {
@@ -4190,6 +4214,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -4205,7 +4235,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     format: function format(num) {
-      return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " VNĐ";
+      return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " VND";
     },
     price: function price(discount, _price) {
       if (discount > 0) {
@@ -4859,7 +4889,7 @@ __webpack_require__.r(__webpack_exports__);
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
 window.axios = (__webpack_require__(/*! axios */ "./node_modules/axios/index.js")["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0__["default"].filter("formatTienVN", function (num) {
-  return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " VNĐ";
+  return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " VND";
 });
 
 
@@ -7652,19 +7682,33 @@ var render = function () {
                     ),
                   ]),
                   _vm._v(" "),
-                  _c("p", { staticClass: "mt-[5px] line-through" }, [
-                    _vm._v(
-                      "\n                  " +
-                        _vm._s(_vm._f("formatTienVN")(_vm.product.price)) +
-                        "\n                  -\n                  " +
-                        _vm._s(
-                          parseInt(
-                            "" +
-                              (_vm.product.discount / _vm.product.price) * 100
-                          )
-                        ) +
-                        "%\n                "
+                  _c("div", [
+                    _c(
+                      "p",
+                      { staticClass: "mt-[5px] line-through inline-block" },
+                      [
+                        _vm._v(
+                          "\n                    " +
+                            _vm._s(_vm._f("formatTienVN")(_vm.product.price)) +
+                            "\n                  "
+                        ),
+                      ]
                     ),
+                    _vm._v(" "),
+                    _c("span", [
+                      _vm._v(
+                        "\n                    -\n                    " +
+                          _vm._s(
+                            parseInt(
+                              "" +
+                                (100 -
+                                  (_vm.product.discount / _vm.product.price) *
+                                    100)
+                            )
+                          ) +
+                          "%\n                  "
+                      ),
+                    ]),
                   ]),
                   _vm._v(" "),
                   _c("p", { staticClass: "font-bold text-[17px] mt-[5px]" }, [
@@ -7930,21 +7974,38 @@ var render = function () {
                               ]
                             ),
                             _vm._v(" "),
-                            _c("p", { staticClass: "mt-[5px] line-through" }, [
-                              _vm._v(
-                                "\n                    " +
-                                  _vm._s(
-                                    _vm._f("formatTienVN")(product.price)
-                                  ) +
-                                  "\n                    -\n                    " +
-                                  _vm._s(
-                                    parseInt(
-                                      "" +
-                                        (product.discount / product.price) * 100
-                                    )
-                                  ) +
-                                  "%\n                  "
+                            _c("div", [
+                              _c(
+                                "p",
+                                {
+                                  staticClass:
+                                    "mt-[5px] line-through inline-block",
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                      " +
+                                      _vm._s(
+                                        _vm._f("formatTienVN")(product.price)
+                                      ) +
+                                      "\n                    "
+                                  ),
+                                ]
                               ),
+                              _vm._v(" "),
+                              _c("span", [
+                                _vm._v(
+                                  "\n                      -\n                      " +
+                                    _vm._s(
+                                      parseInt(
+                                        "" +
+                                          (100 -
+                                            (product.discount / product.price) *
+                                              100)
+                                      )
+                                    ) +
+                                    "%\n                    "
+                                ),
+                              ]),
                             ]),
                             _vm._v(" "),
                             _c(
@@ -8257,21 +8318,38 @@ var render = function () {
                               ]
                             ),
                             _vm._v(" "),
-                            _c("p", { staticClass: "mt-[5px] line-through" }, [
-                              _vm._v(
-                                "\n                    " +
-                                  _vm._s(
-                                    _vm._f("formatTienVN")(product.price)
-                                  ) +
-                                  "\n                    -\n                    " +
-                                  _vm._s(
-                                    parseInt(
-                                      "" +
-                                        (product.discount / product.price) * 100
-                                    )
-                                  ) +
-                                  "%\n                  "
+                            _c("div", [
+                              _c(
+                                "p",
+                                {
+                                  staticClass:
+                                    "mt-[5px] line-through inline-block",
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                      " +
+                                      _vm._s(
+                                        _vm._f("formatTienVN")(product.price)
+                                      ) +
+                                      "\n                    "
+                                  ),
+                                ]
                               ),
+                              _vm._v(" "),
+                              _c("span", [
+                                _vm._v(
+                                  "\n                      -\n                      " +
+                                    _vm._s(
+                                      parseInt(
+                                        "" +
+                                          (100 -
+                                            (product.discount / product.price) *
+                                              100)
+                                      )
+                                    ) +
+                                    "%\n                    "
+                                ),
+                              ]),
                             ]),
                             _vm._v(" "),
                             _c(
@@ -8533,21 +8611,38 @@ var render = function () {
                               ]
                             ),
                             _vm._v(" "),
-                            _c("p", { staticClass: "mt-[5px] line-through" }, [
-                              _vm._v(
-                                "\n                    " +
-                                  _vm._s(
-                                    _vm._f("formatTienVN")(product.price)
-                                  ) +
-                                  "\n                    -\n                    " +
-                                  _vm._s(
-                                    parseInt(
-                                      "" +
-                                        (product.discount / product.price) * 100
-                                    )
-                                  ) +
-                                  "%\n                  "
+                            _c("div", [
+                              _c(
+                                "p",
+                                {
+                                  staticClass:
+                                    "mt-[5px] line-through inline-block",
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                      " +
+                                      _vm._s(
+                                        _vm._f("formatTienVN")(product.price)
+                                      ) +
+                                      "\n                    "
+                                  ),
+                                ]
                               ),
+                              _vm._v(" "),
+                              _c("span", [
+                                _vm._v(
+                                  "\n                      -\n                      " +
+                                    _vm._s(
+                                      parseInt(
+                                        "" +
+                                          (100 -
+                                            (product.discount / product.price) *
+                                              100)
+                                      )
+                                    ) +
+                                    "%\n                    "
+                                ),
+                              ]),
                             ]),
                             _vm._v(" "),
                             _c(
@@ -9746,28 +9841,42 @@ var render = function () {
                                   ]
                                 ),
                                 _vm._v(" "),
-                                _c(
-                                  "p",
-                                  { staticClass: "mt-[5px] line-through" },
-                                  [
+                                _c("div", [
+                                  _c(
+                                    "p",
+                                    {
+                                      staticClass:
+                                        "mt-[5px] line-through inline-block",
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n                          " +
+                                          _vm._s(
+                                            _vm._f("formatTienVN")(
+                                              product.price
+                                            )
+                                          ) +
+                                          "\n                        "
+                                      ),
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _c("span", [
                                     _vm._v(
-                                      "\n                        " +
-                                        _vm._s(
-                                          _vm._f("formatTienVN")(product.price)
-                                        ) +
-                                        "\n                        -\n                        " +
+                                      "\n                          -\n                          " +
                                         _vm._s(
                                           parseInt(
                                             "" +
-                                              (product.discount /
-                                                product.price) *
-                                                100
+                                              (100 -
+                                                (product.discount /
+                                                  product.price) *
+                                                  100)
                                           )
                                         ) +
-                                        "%\n                      "
+                                        "%\n                        "
                                     ),
-                                  ]
-                                ),
+                                  ]),
+                                ]),
                                 _vm._v(" "),
                                 _c(
                                   "p",

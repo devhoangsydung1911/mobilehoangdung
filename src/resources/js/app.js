@@ -4,7 +4,7 @@ window.Vue = require("vue");
 window.axios = require("axios").default;
 
 Vue.filter("formatTienVN", (num) => {
-  return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " VNĐ";
+  return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " VND";
 });
 
 import Toaster from "v-toaster";
